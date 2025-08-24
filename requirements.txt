@@ -1,0 +1,11 @@
+torch==2.1.0
+transformers==4.27.4
+sentence-transformers==2.2.2
+huggingface_hub==0.13.4
+spacy==3.7.2
+pydantic==1.10.13
+typing-extensions==4.5.0
+annoy==1.17.3
+biopython==1.85
+requests==2.31.0
+tqdm==4.65.0
