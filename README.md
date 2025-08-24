@@ -93,6 +93,7 @@ Models are not included in this repo (they are large). HuggingFace Hub will down
 If you want to use custom models, update the model names in:
 
 semantic_search.py → all-MiniLM-L6-v2
+
 relation_search.py → pritamdeka/S-PubMedBERT-MS-MARCO
 
 Large files should be handled via Git LFS.
