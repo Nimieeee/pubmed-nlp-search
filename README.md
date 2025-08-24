@@ -81,10 +81,15 @@ Score 0.9031 → fluoxetine (CHEMICAL) → hepatitis (DISEASE) (PMID 12345678)
 📖 Requirements
 
 Python 3.9+
+
 PyTorch
+
 SentenceTransformers
+
 Transformers
+
 SciSpacy
+
 Biopython
 
 📌 Notes
