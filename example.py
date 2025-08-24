@@ -3,7 +3,6 @@ from pubmed_client import PubMedClient
 from entity_relation import EntityRelationExtractor
 from semantic_search import SemanticSearch
 from relation_search import RelationSearch
-from knowledge_graph import KnowledgeGraphBuilder
 
 
 def main():
@@ -12,7 +11,6 @@ def main():
     abstracts, ids = client.fetch("antidepressant hepatotoxicity", retmax=5)
 
     extractor = EntityRelationExtractor()
-    kg_builder = KnowledgeGraphBuilder()
 
     all_relations = []
     for pmid, abs_text in zip(ids, abstracts):
@@ -20,7 +18,6 @@ def main():
         print(f"\n📄 PMID {pmid}")
         print("Entities:", entities)
         print("Relations:", relations)
-        kg_builder.add_relations(relations)
         all_relations.extend(relations)
 
     # ---- Semantic search over abstracts ----
@@ -37,9 +34,6 @@ def main():
 
     for rel_text, score, pmid in rel_results[:5]:
         print(f"Score {score:.4f} → {rel_text} (PMID {pmid})")
-
-    # ---- Export KG ----
-    kg_builder.export()
 
 
 if __name__ == "__main__":
