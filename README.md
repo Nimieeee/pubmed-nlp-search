@@ -64,10 +64,9 @@ Run the demo script:
 ```
 python example.py
 ```
-
+```
 Example Output
 🔎 Fetching PubMed articles on antidepressant hepatotoxicity...
-
 📄 PMID 12345678
 Entities: [('fluoxetine', 'CHEMICAL'), ('hepatitis', 'DISEASE')]
 Relations: fluoxetine (CHEMICAL) → hepatitis (DISEASE)
@@ -77,7 +76,7 @@ Score 0.8123 → Antidepressant-induced hepatotoxicity is rare but serious...
 
 🔍 Relation-level semantic search:
 Score 0.9031 → fluoxetine (CHEMICAL) → hepatitis (DISEASE) (PMID 12345678)
-
+```
 
 📖 Requirements
 
