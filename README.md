@@ -20,15 +20,23 @@ The goal is to make it easier to find relevant biomedical knowledge (e.g., drug�
 ---
 
 ## 📂 Project Structure
+```
 pubmed-nlp-search/
-│── example.py # Example pipeline (run this first)
-│── semantic_search.py # Abstract-level semantic search (MiniLM + Annoy)
-│── relation_search.py # Relation-level semantic search (PubMedBERT)
-│── entity_relation.py # Simple entity & relation extractor
-│── pubmed_client.py # Fetches abstracts from PubMed
-│── requirements.txt # Python dependencies
-│── README.md # This file
 
+│── example.py # Example pipeline (run this first)
+
+│── semantic_search.py # Abstract-level semantic search (MiniLM + Annoy)
+
+│── relation_search.py # Relation-level semantic search (PubMedBERT)
+
+│── entity_relation.py # Simple entity & relation extractor
+
+│── pubmed_client.py # Fetches abstracts from PubMed
+
+│── requirements.txt # Python dependencies
+
+│── README.md # This file
+```
 
 ---
 
@@ -48,12 +56,14 @@ pip install -r requirements.txt
 
 4. Install SciSpacy model (for biomedical entity extraction)
 pip install https://s3.amazonaws.com/allenai-scispacy/releases/v0.5.1/en_core_sci_sm-0.5.1.tar.gz
-
+```
 
 ▶️ Usage
 
 Run the demo script:
+```
 python example.py
+```
 
 Example Output
 🔎 Fetching PubMed articles on antidepressant hepatotoxicity...
